@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.indirim{
+    color: red;
+}
+.scrollmenu {
+    max-width: 400px;
+    overflow:scroll;
+    overflow-y: hidden;
+    display: flex;
+    white-space: nowrap;
+
+    }
+    div.scrollmenu div {
+    background-color: rgb(255, 148, 241);
+    text-decoration: none;
+    width: max-content;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-bottom: 0px;
+    }
+
+    .scrollmenu div:hover {
+        background-color: rgb(255, 22, 224);
+    }
+@media screen and (max-width: 768px) {
+    .mobilyok{
+        display: none;
+    }
+    .fiyat{
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        padding-top:10px ;
+    }
+    .indirim{
+        height: 30px;
+        color: white;
+        background-color: red;
+    }
+
+}
+
+.scrollmenu::-webkit-scrollbar{
+    height: 5px;
+}
+
+.scrollmenu::-webkit-scrollbar-thumb{
+    background-color: darkgray;
+    border-radius: 5px;
+}
+.scrollmenu::-webkit-scrollbar-thumb:hover{
+    background-color: gray;
+
+}
